@@ -14,10 +14,19 @@
 12843, bb90ff93a3ee9e93c123ebfcd2ca1894e8994fef147ad81f7989eccf83f64000
 ```
 
+- By default it uses 5 threads, so you can set another value for it, example:
+
+```bash
+finhash -N 3 -F 3 10
+```
+
 - For other informations, run: ```finhash --help```:
 
 ```bash
-Usage: finhash -N <N> -F <F>
+Usage: finhash -N <N> -F <F> [THREADS]
+
+Arguments:
+  [THREADS]  number of threads [default: 5]
 
 Options:
   -N <N>         number of zeros
